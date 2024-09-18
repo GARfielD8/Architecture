@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ item.name }}</title>
+</head>
+<body>
+    <h1>{{ item.name }}</h1>
+    <p>{{ item.description }}</p>
+    <a href="{% url 'item_update' item.id %}">Edit</a>
+    <form method="post" action="{% url 'item_delete' item.id %}">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+    <a href="{% url 'item_list' %}">Back to list</a>
+</body>
+</html>

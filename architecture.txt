@@ -1,0 +1,39 @@
+djangoProject_test/
+│
+├── agency/
+│   ├── __init__.py
+│   ├── repository.py
+│   ├── views.py
+│
+├── controller/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── services.py
+│
+├── djangoProject_test/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+│
+├── myapp/
+│   ├── migrations/
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── forms.py
+│
+├── templates/
+│   ├── item_list.html
+│   ├── item_detail.html
+│   ├── item_create.html
+│   ├── item_update.html
+│   └── item_delete.html
+│
+├── manage.py
+└── db.sqlite3

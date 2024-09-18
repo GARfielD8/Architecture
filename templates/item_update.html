@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Item</title>
+</head>
+<body>
+    <h1>Edit Item</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ item.name }}">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description">{{ item.description }}</textarea>
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'item_list' %}">Back to list</a>
+</body>
+</html>
